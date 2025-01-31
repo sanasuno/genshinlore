@@ -29,5 +29,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          publish_branch: main  # main ブランチにデプロイ
-          force_orphan: true    # 既存のファイルを削除してクリーンな状態でデプロイ
+          # publish_branch: gh-pages  # デフォルトで gh-pages ブランチにデプロイ
