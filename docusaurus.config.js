@@ -12,8 +12,8 @@ const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV; /
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '原神考察録',
+  tagline: 'Genshin Impact Lore by Sanasuno',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -81,23 +81,22 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '原神考察録',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.png',
+          alt: 'ロゴ',
+          src: 'img/logo-light.png',
+          srcDark: 'img/logo-dark.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: 'docs',
             position: 'left',
-            label: 'Tutorial',
+            label: '資料',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: 'lore',
+            position: 'left',
+            label: '考察',
           },
         ],
       },
@@ -114,37 +113,16 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: '連絡先',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'X: @sanasuno_game',
+                href: 'https://x.com/sanasuno_game',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `当サイトにおいて引用されている『原神』内の文章・画像等の著作権は、COGNOSPHERE PTE. LTD. が保有します。<br/>当サイトのコンテンツは特に表記のない限りCC-BY-SA 3.0ライセンスの下で利用可能です<br/>継承元：<a href=https://genshin-impact.fandom.com/wiki/>Genshin Impact Wiki</a>`,
       },
       prism: {
         theme: prismThemes.github,
