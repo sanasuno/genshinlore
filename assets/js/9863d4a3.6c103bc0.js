@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksanasuno=self.webpackChunksanasuno||[]).push([[5073],{3825:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/genshinlore/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
