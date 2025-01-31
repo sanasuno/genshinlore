@@ -25,6 +25,9 @@ const config = {
   organizationName: 'sanasuno', // Usually your GitHub org/user name.
   projectName: 'genshinlore', // Usually your repo name.
 
+  trailingSlash: false,
+  deploymentBranch: "gh-pages", // デプロイ先ブランチ
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
