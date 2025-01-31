@@ -3,17 +3,17 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # メインブランチにプッシュされたときに実行
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Set up Node.js 18
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -21,13 +21,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Docusaurus
+      - name: Build Docusaurus site
         run: npm run build
 
-      - name: Commit and push built files to main branch
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add -f build  # -f オプションを使用
-          git commit -m "Deploy Docusaurus site to GitHub Pages"
-          git push origin main
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          destination_dir: .
