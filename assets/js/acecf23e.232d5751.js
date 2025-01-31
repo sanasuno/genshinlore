@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksanasuno=self.webpackChunksanasuno||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/glore/blog","blogTitle":"Blog","authorsListPath":"/glore/blog/authors"}')}}]);
