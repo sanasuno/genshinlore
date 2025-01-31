@@ -8,6 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV; // 修正
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -18,7 +20,7 @@ const config = {
   url: 'https://sanasuno.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/genshinlore/',
+  baseUrl: isDev ? '/' : '/glore/',  // ローカルでは '/' を使う
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
