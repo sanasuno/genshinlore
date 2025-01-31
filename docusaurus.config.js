@@ -18,12 +18,12 @@ const config = {
   url: 'https://sanasuno.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/genshinlore/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sanasuno', // Usually your GitHub org/user name.
-  projectName: 'sanasuno.github.io', // Usually your repo name.
+  projectName: 'genshinlore', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
