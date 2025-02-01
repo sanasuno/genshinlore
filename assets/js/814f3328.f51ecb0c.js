@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksanasuno=self.webpackChunksanasuno||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"\u8a18\u4e8b\u4e00\u89a7","items":[{"title":"\u30c6\u30a4\u30ef\u30c3\u30c8\u306e\u6642\u7cfb\u5217","permalink":"/genshinlore/blog/timeline","unlisted":false,"date":"2025-02-01T21:33:14.000Z"}]}')}}]);
