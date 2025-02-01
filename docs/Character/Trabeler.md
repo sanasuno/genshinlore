@@ -2,7 +2,10 @@
 sidebar_position: 1
 title: 旅人
 ---
-<div align="center"><img src='/img/characters/gacha/Traveler.webp' width="320" /></div>
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<div align="center"><img src={useBaseUrl('/img/characters/gacha/Traveler.webp')} width="320" /></div>
 
 > 世界の外から漂流してきた旅人。肉親が見知らぬ神に連れ去られたため、七神を探す旅に出た。
 
