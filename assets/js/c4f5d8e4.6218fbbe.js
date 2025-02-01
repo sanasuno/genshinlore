@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksanasuno=self.webpackChunksanasuno||[]).push([[253],{9179:(n,s,e)=>{e.r(s),e.d(s,{default:()=>r});e(6540);var u=e(1410),a=e(4848);function r(){return(0,a.jsx)(u.A,{children:(0,a.jsx)("div",{children:(0,a.jsx)("h1",{children:"\u539f\u795e\u8003\u5bdf\u9332\u3078\u3088\u3046\u3053\u305d"})})})}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksanasuno=self.webpackChunksanasuno||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/genshinlore/blog","blogTitle":"Blog","authorsListPath":"/genshinlore/blog/authors"}')}}]);

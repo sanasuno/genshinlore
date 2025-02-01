@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksanasuno=self.webpackChunksanasuno||[]).push([[457],{3338:s=>{s.exports=JSON.parse('{"authors":[{"name":"\u3055\u306a\u3059\u306e","title":"\u539f\u795e\u8003\u5bdf\u52e2","key":"sanasuno","page":null,"count":1}]}')}}]);
