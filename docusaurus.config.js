@@ -15,15 +15,8 @@ const config = {
   title: '原神考察録',
   tagline: 'Genshin Impact Lore by Sanasuno',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://sanasuno.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: isDev ? '/' : '/genshinlore/',  // ローカルでは '/' を使う
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sanasuno', // Usually your GitHub org/user name.
   projectName: 'genshinlore', // Usually your repo name.
 
@@ -33,9 +26,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja'],
@@ -48,21 +38,14 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://sanasuno.github.io/sanasuno/',
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: '記事一覧',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://sanasuno.github.io/sanasuno/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -78,8 +61,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
+      colorMode: {
+        defaultMode: 'dark',
+      },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: '原神考察録',
         logo: {
@@ -88,6 +79,16 @@ const config = {
           srcDark: 'img/logo-dark.png',
         },
         items: [
+          {
+            to: 'docs',
+            position: 'left',
+            label: '資料',
+          },
+          {
+            to: 'blog',
+            position: 'left',
+            label: '考察',
+          },
         ],
       },
       footer: {
@@ -98,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs',
               },
             ],
           },
@@ -118,7 +119,19 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      plugins: [
+        [
+          '@docusaurus/plugin-content-pages',
+          {
+            path: 'src/pages',
+            routeBasePath: '/',
+            exclude: ['**/index.html'], // HTMLファイルを除外
+          },
+        ],
+      ],
     }),
 };
+
+
 
 export default config;
